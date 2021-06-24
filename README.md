@@ -120,12 +120,13 @@ C:\GitHome\ws-github-02\java-palindrome-algorithm>mvn clean test
 -------------------------------------------------------
 Running josemarsilva.com.br.palindrome_algorithm.AppTest
 List of phrases checked with true expected:
-0: 'afÒ' - True
+List of phrases checked with true expected:
+0: 'afã' - True
 1: 'aia' - True
 2: 'aibofobia' - True
 3: 'ala' - True
 4: 'ama' - True
-5: 'anÒ' - True
+5: 'anã' - True
 6: 'anilina' - True
 7: 'ata' - True
 8: 'arara' - True
@@ -137,7 +138,7 @@ List of phrases checked with true expected:
 14: 'metem' - True
 15: 'mirim' - True
 16: 'oco' - True
-17: 'omissÝssimo' - True
+17: 'omissíssimo' - True
 18: 'osso' - True
 19: 'ovo' - True
 20: 'radar' - True
@@ -156,68 +157,67 @@ List of phrases checked with true expected:
 33: 'salas' - True
 34: 'socos' - True
 35: 'sopapos' - True
-36: 's¾s' - True
+36: 'sós' - True
 37: 'A base do teto desaba.' - True
 38: 'A cara rajada da jararaca.' - True
 39: 'Acuda cadela da Leda caduca.' - True
 40: 'A dama admirou o rim da amada.' - True
 41: 'A Daniela ama a lei? Nada!' - True
-42: 'Adias a data da saÝda.' - True
+42: 'Adias a data da saída.' - True
 43: 'A diva em Argel alegra-me a vida.' - True
-44: 'A droga do dote Ú todo da gorda.' - True
+44: 'A droga do dote é todo da gorda.' - True
 45: 'A gorda ama a droga.' - True
-46: 'A grama Ú amarga.' - True
-47: 'AÝ, Lima falou: ôOlß, famÝlia!ö.' - True
-48: 'Ajudem Edu, jß!' - True
+46: 'A grama é amarga.' - True
+47: 'Aí, Lima falou: "Olá, família!".' - False
+     * ailimafalou"olafamilia"
+     * "ailimafalo"uolafamilia
+48: 'Ajudem Edu, já¡!' - True
 49: 'A lupa pula.' - True
-50: 'A mÒe te ama.' - True
+50: 'A mãe te ama.' - True
 51: 'A mala nada na lama.' - True
 52: 'Ame o poema.' - True
-53: 'A miss Ú pÚssima!' - True
-54: 'Amo OmÒ. Se Roma me tem amores, amo OmÒ!' - True
+53: 'A miss é péssima!' - True
+54: 'Amo Omã. Se Roma me tem amores, amo Omã!' - True
 55: 'Anotaram a data da maratona.' - True
-56: 'A pateta ama atÚ tapa.' - True
-57: 'Ap¾s a sopa.' - True
+56: 'A pateta ama até tapa.' - True
+57: 'Após a sopa.' - True
 58: 'Arara rara.' - True
-59: '└ Rita, sßtira!' - True
-60: 'A Rita, sobre vov¶, versos atira.' - False
+59: 'À Rita, sátira!' - True
+60: 'A Rita, sobre vovô, versos atira.' - False
+     * aritasobrevovoversosatira
+     * aritasosrevovoverbosatira
 61: 'A rua Laura.' - True
-62: 'Assim a aia ia Ó missa.' - True
+62: 'Assim a aia ia ã  missa.' - True
 63: 'Ato idiota.' - True
 64: 'A torre da derrota.' - True
-65: 'E atÚ o Papa poeta Ú.' - True
+65: 'E até o Papa poeta é.' - True
 66: 'Irene ri.' - True
-67: 'Laþo bacana para panaca boþal.' - True
-68: 'Lß vou eu em meu eu oval.' - True
-69: 'Luza Rocelina, a namorada do Manuel, leu na moda da romana: "anil Ú cor azul".' - False
+67: 'Laço bacana para panaca boçal.' - True
+68: 'Lá vou eu em meu eu oval.' - True
+69: 'Luza Rocelina, a namorada do Manuel, leu na moda da romana: "anil é cor azul".' - False
+     * luzarocelinaanamoradadomanuelleunamodadaromana"anilecorazul"
+     * "luzarocelina"anamoradadomanuelleunamodadaromanaanilecorazul
 70: 'Luz azul.' - True
 71: 'Mega bobagem.' - True
-72: 'Me vÛ se a panela da moþa Ú de aþo, Madalena Paes, e vem.' - True
-73: 'Missa Ú assim.' - True
-74: 'O cÚu sueco.' - True
+72: 'Me vê se a panela da moça é de aço, Madalena Paes, e vem.' - True
+73: 'Missa é assim.' - True
+74: 'O céu sueco.' - True
 75: 'O galo ama o lago.' - True
-76: 'Olß, galo!' - True
-77: 'OlÚ! Maracujß, caju, caramelo.' - True
+76: 'Olá, galo!' - True
+77: 'Olé! Maracujá, caju, caramelo.' - True
 78: 'O lobo ama o bolo.' - True
 79: 'O romano acata amores a damas amadas e Roma ataca o namoro.' - True
 80: 'O teu dueto.' - True
-81: 'Ëtimo, s¾ eu, que os omito.' - True
-82: 'Oto come mocot¾.' - True
+81: 'Ótimo, só eu, que os omito.' - True
+82: 'Oto come mocotó.' - True
 83: 'O trote torto.' - True
 84: 'Rir, o breve verbo rir.' - True
-85: 'Roma Ú amor.' - True
+85: 'Roma é amor.' - True
 86: 'Roma me tem amor.' - True
-87: 'SaÝram o tio e oito Marias.' - True
+87: 'Saíram o tio e oito Marias.' - True
 88: 'Seco de raiva, coloco no colo caviar e doces.' - True
-89: 'Socorram-me, subi no ¶nibus em Marrocos.' - True
-90: 'ZÚ de Lima, Rua Laura, mil e dez.' - True
-Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.069 sec <<< FAILURE!
-testApp(josemarsilva.com.br.palindrome_algorithm.AppTest)  Time elapsed: 0.069 sec  <<< FAILURE!
-junit.framework.AssertionFailedError
-        at junit.framework.Assert.fail(Assert.java:47)
-        at junit.framework.Assert.assertTrue(Assert.java:20)
-        at junit.framework.Assert.assertTrue(Assert.java:27)
-        at josemarsilva.com.br.palindrome_algorithm.AppTest.testApp(AppTest.java:145)
+89: 'Socorram-me, subi no ônibus em Marrocos.' - True
+90: 'Zé de Lima, Rua Laura, mil e dez.' - True
 
 
 Results :

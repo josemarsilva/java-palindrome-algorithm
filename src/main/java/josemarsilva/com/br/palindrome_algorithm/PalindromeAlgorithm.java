@@ -7,7 +7,8 @@ public class PalindromeAlgorithm {
 	/*
 	 * Properties
 	 */
-	private StringBuffer sbPhrase;
+	private String strOriginalPhrase;
+	private String strAdjustedPhrase;
 
 
 	/*
@@ -22,11 +23,14 @@ public class PalindromeAlgorithm {
 	 * returns: boolean
 	 */
 	public boolean isPalindrome(String str) {		
-		
-		// Test
+				
 		boolean bRet = true;
+
+		// Save original and adjusted phrase
+		this.setStrOriginalPhrase(str);
+		String strCleaned = cleanString(str);
+		this.setStrAdjustedPhrase(strCleaned);
 		
-		String strCleaned = cleanString(str);		
         for (int i=0; i< strCleaned.length() / 2 ; i++ ) {
         	if ( strCleaned.charAt(i) != strCleaned.charAt(strCleaned.length()-1-i) ) {
         		bRet = false;
@@ -46,7 +50,36 @@ public class PalindromeAlgorithm {
 		String strResult = new String( Normalizer.normalize( str.toLowerCase(), Normalizer.Form.NFD).replaceAll("[^\\p{ASCII}]", "") );
     	return strResult.replaceAll("-", "").replaceAll(",", "").replaceAll("\\.", "").replaceAll("!", "").replaceAll(":", "").replaceAll("\\?", "" ).replaceAll("\\(", "" ).replaceAll("\\)", "" ).replaceAll(" ", "" );
 	}
+	
+	/*
+	 * Reverse
+	 */
+	public String reverse(String str) {
+		String strReturn = new String("");
+		for (int i=str.length()-1; i>=0; i--) {
+			strReturn = strReturn.concat( str.substring(i, i+1) );
+		}
+		return strReturn;
+	}
+	
+	/*
+	 * Getter's and Setter's
+	 */
+	public String getStrOriginalPhrase() {
+		return strOriginalPhrase;
+	}
 
+	public void setStrOriginalPhrase(String strOriginalPhrase) {
+		this.strOriginalPhrase = strOriginalPhrase;
+	}
+
+	public String getStrAdjustedPhrase() {
+		return strAdjustedPhrase;
+	}
+
+	public void setStrAdjustedPhrase(String strAdjustedPhrase) {
+		this.strAdjustedPhrase = strAdjustedPhrase;
+	}
 
 
 }

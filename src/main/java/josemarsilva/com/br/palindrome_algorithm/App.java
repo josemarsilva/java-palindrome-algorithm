@@ -8,7 +8,7 @@ public class App
 {
 	
 	private static final String APP_NAME = new String("PalindromeAlgorithm");
-	private static final String APP_VERSION = new String("2021.06.23.2230");
+	private static final String APP_VERSION = new String("2021.06.24.1100");
 	private static final String MSG_WELLCOME = new String( APP_NAME + " -  " + APP_VERSION + "\n");
 	private static final String MSG_USAGE = new String( "Usage: \n" +
 			"  java -jar palindrome-algorithm\n"
@@ -17,7 +17,10 @@ public class App
 			"  https://www.todamateria.com.br/palindromo/\n" +
 			"  https://github.com/josemarsilva/java-palindrome-algorithm"
 	);
-	private static final String MSG_RESULT = new String( "Palindrome evaluation of your phrase '%strPhrase' is %strResult.");
+	private static final String MSG_RESULT = new String( "Palindrome evaluation for your original phrase '%strPhrase' is %strResult.");
+	private static final String MSG_COMPARISON= new String( "  * %strAdjustedPhrase\n"
+														+   "  * %strReversePhrase"
+	);
 	
     public static void main( String[] args )
     {        
@@ -38,11 +41,17 @@ public class App
             }
             
             // Result
+            boolean bResult = true;
             String strResult = new String("True");
             if (!palindromeAlgorithm.isPalindrome(strPhrase)) {
+            	bResult = false;
                 strResult = new String("False");
             }
             System.out.println(MSG_RESULT.replace("%strPhrase", strPhrase).replaceFirst("%strResult", strResult));
+            
+            if (!bResult) {
+                System.out.println(MSG_COMPARISON.replaceAll("%strAdjustedPhrase", palindromeAlgorithm.getStrAdjustedPhrase()).replaceAll("%strReversePhrase", palindromeAlgorithm.reverse(palindromeAlgorithm.getStrAdjustedPhrase())));
+            }
 
         	// Exit success!
 

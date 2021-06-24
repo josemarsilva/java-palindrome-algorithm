@@ -37,12 +37,12 @@ public class AppTest
     public void testApp()
     {
     	String[] strArrayPhrase = new String[] {
-    			"af√£",
+    			"af„",
     			"aia",
     			"aibofobia",
     			"ala",
     			"ama",
-    			"an√£",
+    			"an„",
     			"anilina",
     			"ata",
     			"arara",
@@ -54,7 +54,7 @@ public class AppTest
     			"metem",
     			"mirim",
     			"oco",
-    			"omiss√≠ssimo",
+    			"omissÌssimo",
     			"osso",
     			"ovo",
     			"radar",
@@ -73,61 +73,61 @@ public class AppTest
     			"salas",
     			"socos",
     			"sopapos",
-    			"s√≥s",
+    			"sÛs",
     			"A base do teto desaba.",
     			"A cara rajada da jararaca.",
     			"Acuda cadela da Leda caduca.",
     			"A dama admirou o rim da amada.",
     			"A Daniela ama a lei? Nada!",
-    			"Adias a data da sa√≠da.",
+    			"Adias a data da saÌda.",
     			"A diva em Argel alegra-me a vida.",
-    			"A droga do dote √© todo da gorda.",
+    			"A droga do dote È todo da gorda.",
     			"A gorda ama a droga.",
-    			"A grama √© amarga.",
-    			"A√≠, Lima falou: ‚ÄúOl√°, fam√≠lia!‚Äù.",
-    			"Ajudem Edu, j√°!",
+    			"A grama È amarga.",
+    			"AÌ, Lima falou: \"Ol·, famÌlia!\".",
+    			"Ajudem Edu, j·°!",
     			"A lupa pula.",
-    			"A m√£e te ama.",
+    			"A m„e te ama.",
     			"A mala nada na lama.",
     			"Ame o poema.",
-    			"A miss √© p√©ssima!",
-    			"Amo Om√£. Se Roma me tem amores, amo Om√£!",
+    			"A miss È pÈssima!",
+    			"Amo Om„. Se Roma me tem amores, amo Om„!",
     			"Anotaram a data da maratona.",
-    			"A pateta ama at√© tapa.",
-    			"Ap√≥s a sopa.",
+    			"A pateta ama atÈ tapa.",
+    			"ApÛs a sopa.",
     			"Arara rara.",
-    			"√Ä Rita, s√°tira!",
-    			"A Rita, sobre vov√¥, versos atira.",
+    			"¿ Rita, s·tira!",
+    			"A Rita, sobre vovÙ, versos atira.",
     			"A rua Laura.",
-    			"Assim a aia ia √† missa.",
+    			"Assim a aia ia „† missa.",
     			"Ato idiota.",
     			"A torre da derrota.",
-    			"E at√© o Papa poeta √©.",
+    			"E atÈ o Papa poeta È.",
     			"Irene ri.",
-    			"La√ßo bacana para panaca bo√ßal.",
-    			"L√° vou eu em meu eu oval.",
-    			"Luza Rocelina, a namorada do Manuel, leu na moda da romana: \"anil √© cor azul\".",
+    			"LaÁo bacana para panaca boÁal.",
+    			"L· vou eu em meu eu oval.",
+    			"Luza Rocelina, a namorada do Manuel, leu na moda da romana: \"anil È cor azul\".",
     			"Luz azul.",
     			"Mega bobagem.",
-    			"Me v√™ se a panela da mo√ßa √© de a√ßo, Madalena Paes, e vem.",
-    			"Missa √© assim.",
-    			"O c√©u sueco.",
+    			"Me vÍ se a panela da moÁa È de aÁo, Madalena Paes, e vem.",
+    			"Missa È assim.",
+    			"O cÈu sueco.",
     			"O galo ama o lago.",
-    			"Ol√°, galo!",
-    			"Ol√©! Maracuj√°, caju, caramelo.",
+    			"Ol·, galo!",
+    			"OlÈ! Maracuj·, caju, caramelo.",
     			"O lobo ama o bolo.",
     			"O romano acata amores a damas amadas e Roma ataca o namoro.",
     			"O teu dueto.",
-    			"√ìtimo, s√≥ eu, que os omito.",
-    			"Oto come mocot√≥.",
+    			"”timo, sÛ eu, que os omito.",
+    			"Oto come mocotÛ.",
     			"O trote torto.",
     			"Rir, o breve verbo rir.",
-    			"Roma √© amor.",
+    			"Roma È amor.",
     			"Roma me tem amor.",
-    			"Sa√≠ram o tio e oito Marias.",
+    			"SaÌram o tio e oito Marias.",
     			"Seco de raiva, coloco no colo caviar e doces.",
-    			"Socorram-me, subi no √¥nibus em Marrocos.",
-    			"Z√© de Lima, Rua Laura, mil e dez."
+    			"Socorram-me, subi no Ùnibus em Marrocos.",
+    			"ZÈ de Lima, Rua Laura, mil e dez."
     		};
     	PalindromeAlgorithm palindromeAlgorithm = new PalindromeAlgorithm();  
     	boolean bTrueExpected = true;
@@ -136,11 +136,13 @@ public class AppTest
     		System.out.print(i + ": '" + strArrayPhrase[i] + "'");
     		if (!palindromeAlgorithm.isPalindrome(strArrayPhrase[i])) {
     			bTrueExpected = false;
-    			System.out.print(" - False");
+    			System.out.println(" - False"
+    					+ "\n     * " + palindromeAlgorithm.getStrAdjustedPhrase()
+    					+ "\n     * " + palindromeAlgorithm.reverse(palindromeAlgorithm.getStrAdjustedPhrase())
+    			);
     		} else {
-    			System.out.print(" - True");
+    			System.out.println(" - True");
     		}
-    		System.out.println("");
     	}
     	assertTrue(bTrueExpected);
     }
